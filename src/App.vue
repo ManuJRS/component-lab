@@ -1,5 +1,14 @@
 <template>
   <main class="min-h-screen bg-slate-100 p-10 space-y-10">
+    <!--BAGDES-->
+    <section class="rounded-2xl bg-white p-6 shadow-sm">
+      <h2 class="mb-4 text-xl font-semibold text-slate-800 pb-2">Distintas placas</h2>
+      <BaseBadge>por defecto</BaseBadge>
+      <BaseBadge variant="blue">Placa azul</BaseBadge>
+      <BaseBadge variant="red">Placa roja</BaseBadge>
+      <BaseBadge variant="green">Placa verde</BaseBadge>
+      <BaseBadge variant="gray">Placa gris</BaseBadge>
+    </section>
     <!--Aquiestan los btns-->
     <section class="rounded-2xl bg-white p-6 shadow-sm">
       <h2 class="mb-4 text-xl font-semibold text-slate-800 pb-2">Distintos botones</h2>
@@ -47,11 +56,13 @@
         />
       </div>
     </section>
+
   </main>
 </template>
 
 <script setup>
 import { ref, computed} from "vue"
+import BaseBadge from "./components/BaseBadge.vue";
 import BaseButton from "./components/BaseButton.vue"
 import BaseInput from "./components/BaseInput.vue";
 const count = ref(0)
