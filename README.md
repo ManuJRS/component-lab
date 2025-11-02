@@ -1,5 +1,10 @@
-# Vue 3 + Vite
+01/11/2025
+Cree una coleccion de botones para practicar, vue te permite crear componentes que luego puedes reutilizar en otras partes pero te deja cambiar los estilos de manera individual.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+uso un callback a la funcion reservada computed para acceder a los valores y en el return se arman las clases que aparecen luego en el navegador
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Errores: 
+
+#al parecer el btn base en el event litsener del click debe tener un nombre diferente al del event litsener del btn que vas a usar porque si no se activa dos veces el mismo evento (sumaba de 2 en 2).
+
+#creo que el callback de computed puede usar funcion flecha
